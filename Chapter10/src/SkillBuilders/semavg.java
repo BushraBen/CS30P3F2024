@@ -40,7 +40,7 @@ public class semavg {
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the application.
 	 */
