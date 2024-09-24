@@ -23,7 +23,7 @@ public class MetricConversion extends JFrame {
         };
 
         conversionBox = new JComboBox<>(conversions);
-        formulaLabel = new JLabel("Formula will appear here");
+        formulaLabel = new JLabel("The Formula will appear here");
 
         conversionBox.addActionListener(new ActionListener() {
             @Override
@@ -57,7 +57,7 @@ public class MetricConversion extends JFrame {
                 formulaLabel.setText("Formula will appear here");
         }
     }
-
+    
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
