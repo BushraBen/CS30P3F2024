@@ -1,6 +1,5 @@
 package LocalBank;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JComboBox;
 import java.awt.BorderLayout;
@@ -18,7 +17,7 @@ import java.awt.event.MouseEvent;
 public class LocalBankGUI {
 
 	private JFrame frame;
-	private JTextField acctNum;
+	private JTextField accountNum;
 	private JTextField amt;
 	private JTextField firstName;
 	private JTextField lastName;
@@ -50,21 +49,21 @@ public class LocalBankGUI {
 		frame.getContentPane().setLayout(null);
 		
 		
-		acctNum = new JTextField();
-		acctNum.addMouseListener(new MouseAdapter() 
+		accountNum = new JTextField();
+		accountNum.addMouseListener(new MouseAdapter() 
 		{
 			@Override
 			public void mouseClicked(MouseEvent e) 
 			{
-				acctNum.setText(null);
+				accountNum.setText(null);
 			}
 		});
-		acctNum.setForeground(Color.RED);
-		acctNum.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		acctNum.setText("Enter account Number:");
-		acctNum.setBounds(34, 106, 436, 19);
-		frame.getContentPane().add(acctNum);
-		acctNum.setColumns(10);
+		accountNum.setForeground(Color.RED);
+		accountNum.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		accountNum.setText("Enter account Number:");
+		accountNum.setBounds(34, 106, 436, 19);
+		frame.getContentPane().add(accountNum);
+		accountNum.setColumns(10);
 		
 		amt = new JTextField();
 		amt.setText("Enter amount:");
@@ -115,12 +114,12 @@ public class LocalBankGUI {
 				if(bankActivities.getSelectedItem().equals("Deposit"))
 				{
 					amount = amt.getText();
-					message = easySave.transaction(1, acctNum.getText(), Double.parseDouble(amount));
+					message = easySave.transaction(1, accountNum.getText(), Double.parseDouble(amount));
 				}
 				else if(bankActivities.getSelectedItem().equals("Widhdrawal"))
 				{
 					amount = amt.getText();
-					message = easySave.transaction(2, acctNum.getText(), Double.parseDouble(amount));
+					message = easySave.transaction(2, accountNum.getText(), Double.parseDouble(amount));
 				}
 				else if(bankActivities.getSelectedItem().equals("Check Balance"))
 				{
@@ -151,7 +150,7 @@ public class LocalBankGUI {
 				
 				if(bankActivities.getSelectedItem().equals("Deposit"))
 				{
-					acctNum.setForeground(Color.red);
+					accountNum.setForeground(Color.red);
 					amt.setForeground(Color.red);
 				}
 				else if(bankActivities.getSelectedItem().equals("Withdrawal"))
