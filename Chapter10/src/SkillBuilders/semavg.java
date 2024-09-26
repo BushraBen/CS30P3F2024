@@ -25,9 +25,7 @@ public class semavg {
 	private JTextField Fn;
 	private JTextField Ln;
 
-	/**
-	 * Launch the application.
-	 */
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -41,16 +39,12 @@ public class semavg {
 		});
 	}
 	
-	/**
-	 * Create the application.
-	 */
+	
 	public semavg() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initialize() 
 	{
 		ImageIcon cres = new ImageIcon("C:\\Users\\47026501\\git\\CS30P3F2024\\Chapter10\\src\\images\\chhs.png");
