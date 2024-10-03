@@ -20,13 +20,13 @@ public class FindAndReplace {
         String replacementPhrase = scanner.nextLine();
 
         try {
-            // Read the file content
+            // Read file content
             String content = new String(Files.readAllBytes(Paths.get(fileName)));
 
-            // Perform the find and replace operation
+            // Perform the find & replace operation
             String updatedContent = content.replaceAll(searchPhrase, replacementPhrase);
 
-            // Write the updated content back to the file
+           
             Files.write(Paths.get(fileName), updatedContent.getBytes());
 
             System.out.println("Find and replace operation completed successfully.");
