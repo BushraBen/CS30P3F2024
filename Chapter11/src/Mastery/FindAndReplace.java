@@ -15,7 +15,7 @@ public class FindAndReplace {
         System.out.print("Enter the search word or phrase: ");
         String searchPhrase = scanner.nextLine();
 
-        // Prompt user for replacement word or phrase
+        // Prompt user for replacement word/phrase
         System.out.print("Enter the replacement word or phrase: ");
         String replacementPhrase = scanner.nextLine();
 
