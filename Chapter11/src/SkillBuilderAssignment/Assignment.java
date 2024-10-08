@@ -13,7 +13,6 @@ public class Assignment {
         if (!file.exists()) {
             System.out.println("File does not exist: " + file.getAbsolutePath());
             return;
-            //
         }
         
         try {
