@@ -1,4 +1,4 @@
-package SkillBuildersPuckP1P2;
+package SkillBuilderPuckP1P2;
 
 public class Disk {
     private double radius;
