@@ -1,12 +1,14 @@
 package MasteryUEmployeeFacultyStaff;
 
-public class Staff 
-
-	extends UEmployee 
-	{
+	public class Staff 
+		extends UEmployee 
+		{
     private String jobTitle;
 
-    public Staff(String name, double salary, String jobTitle) 
+    public Staff(
+    	String name,
+    	double salary,
+    	String jobTitle)
     {
         super(name, salary);
         this.jobTitle = jobTitle;

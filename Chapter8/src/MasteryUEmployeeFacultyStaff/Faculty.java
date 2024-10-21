@@ -1,7 +1,8 @@
 package MasteryUEmployeeFacultyStaff;
 
-	public class Faculty extends UEmployee 
-	{
+public class Faculty 
+extends UEmployee 
+{
     private String departmentName;
 
     public Faculty(String name, double salary, String departmentName) 
@@ -15,5 +16,3 @@ package MasteryUEmployeeFacultyStaff;
         return departmentName;
     }
 }
-
-
