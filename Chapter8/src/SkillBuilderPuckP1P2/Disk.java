@@ -1,24 +1,29 @@
 package SkillBuilderPuckP1P2;
 
-public class Disk {
+public class Disk 
+{
     private double radius;
     private double thickness;
 
-    public Disk(double radius, double thickness) {
+    public Disk(double radius, double thickness)
+    {
         this.radius = radius;
         this.thickness = thickness;
     }
 
-    public double getRadius() {
+    public double getRadius() 
+    {
         return radius;
     }
 
-    public double getThickness() {
+    public double getThickness() 
+    {
         return thickness;
     }
 
 
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) 
+    {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Disk disk = (Disk) obj;

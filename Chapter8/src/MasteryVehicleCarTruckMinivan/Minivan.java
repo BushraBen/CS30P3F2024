@@ -34,9 +34,11 @@ public class Minivan extends Vehicle
 
     public void openSlidingDoor() 
     {
-        if (hasSlidingDoors) {
+        if (hasSlidingDoors) 
+        {
             System.out.println("Opening the sliding door.");
-        } else {
+        } else 
+        {
             System.out.println("This minivan doesn't have sliding doors.");
         }
     }
@@ -44,7 +46,7 @@ public class Minivan extends Vehicle
     
     public String toString() 
     {
-        return super.toString() + " - Seats: " + numSeats + ", " + (hasSlidingDoors ? "Has sliding doors" : "No sliding doors");
+        return super.toString() + " Seats: " + numSeats + ", " + (hasSlidingDoors ? "Has sliding doors" : "No sliding doors");
     }
 }
 

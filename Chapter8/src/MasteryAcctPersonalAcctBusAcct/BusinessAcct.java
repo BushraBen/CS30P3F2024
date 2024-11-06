@@ -7,7 +7,8 @@ public class BusinessAcct
     
     private static final double CHARGE = 10.0;
 
-    public BusinessAcct(String accountNumber, double initialBalance) 
+    public BusinessAcct
+    (String accountNumber, double initialBalance) 
     {
         super(accountNumber, initialBalance);
     }

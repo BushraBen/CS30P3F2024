@@ -28,11 +28,13 @@ package MasteryVehicleCarTruckMinivan;
     }
 
 
-    public void stop() {
+    public void stop() 
+    {
         System.out.println("The truck's engine is stopping.");
     }
-
-    public void loadCargo() {
+  
+    public void loadCargo() 
+    {
         System.out.println("Loading cargo into the truck.");
     }
 

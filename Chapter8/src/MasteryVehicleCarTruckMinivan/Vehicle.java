@@ -26,15 +26,18 @@ public abstract class Vehicle
     public abstract void start();
     public abstract void stop();
 
-    public void accelerate() {
+    public void accelerate() 
+    {
         System.out.println("The vehicle is accelerating.");
     }
 
-    public void brake() {
+    public void brake() 
+    {
         System.out.println("The vehicle is braking.");
     }
 
-    public String toString() {
+    public String toString() 
+    {
         return year + " " + make + " " + model + " (" + fuelType + ")";
     }
 }

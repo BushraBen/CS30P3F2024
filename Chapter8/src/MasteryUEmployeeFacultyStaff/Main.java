@@ -23,7 +23,7 @@ public class Main
         System.out.println("Salary: $" + faculty.getSalary());
         System.out.println("Department: " + faculty.getDepartmentName());
 
-        System.out.println("\nStaff Information:");
+        System.out.println("Staff Information:");
         System.out.println("Name: " + staff.getName());
         System.out.println("Salary: $" + staff.getSalary());
         System.out.println("Job Title: " + staff.getJobTitle());

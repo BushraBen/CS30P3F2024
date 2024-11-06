@@ -6,7 +6,7 @@ public class AccountTest
     {
 // Test PersonalAcct
         PersonalAcct personalAccount = new PersonalAcct("PersonalAcct", 200.0);
-        System.out.println("Personal Account Initial Balance: $" + personalAccount.getBalance());
+        System.out.println("Personal Account Initial Balance is : $" + personalAccount.getBalance());
         
         personalAccount.withdraw(50.0);
         System.out.println("After withdrawing $50: $" + personalAccount.getBalance());
